@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Segue o Baile
 //
-//  Created by Alexandra Zarzar on 04/02/21.
+//  Created by Meyrillan Silva on 05/02/21.
 //
 
 import SwiftUI
