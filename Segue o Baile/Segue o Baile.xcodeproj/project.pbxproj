@@ -13,6 +13,7 @@
 		8B40E3E725CDE5510061CD92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B40E3E625CDE5510061CD92 /* Preview Assets.xcassets */; };
 		8B40E3F225CDE5510061CD92 /* Segue_o_BaileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3F125CDE5510061CD92 /* Segue_o_BaileTests.swift */; };
 		8B40E3FD25CDE5510061CD92 /* Segue_o_BaileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */; };
+		A853A8AD25D2FE61007B966D /* TelaInicial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853A8AC25D2FE61007B966D /* TelaInicial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		8B40E3F825CDE5510061CD92 /* Segue o BaileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Segue o BaileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue_o_BaileUITests.swift; sourceTree = "<group>"; };
 		8B40E3FE25CDE5510061CD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A853A8AC25D2FE61007B966D /* TelaInicial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				8B40E3DF25CDE5500061CD92 /* Segue_o_BaileApp.swift */,
 				8B40E3E125CDE5500061CD92 /* ContentView.swift */,
+				A853A8AC25D2FE61007B966D /* TelaInicial.swift */,
 				8B40E3E325CDE5510061CD92 /* Assets.xcassets */,
 				8B40E3E825CDE5510061CD92 /* Info.plist */,
 				8B40E3E525CDE5510061CD92 /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A853A8AD25D2FE61007B966D /* TelaInicial.swift in Sources */,
 				8B40E3E225CDE5500061CD92 /* ContentView.swift in Sources */,
 				8B40E3E025CDE5500061CD92 /* Segue_o_BaileApp.swift in Sources */,
 			);
