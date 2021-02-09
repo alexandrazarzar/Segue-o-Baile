@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B3C1E1F25D1D3DA004FF150 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C1E1E25D1D3DA004FF150 /* Category.swift */; };
+		8B3C1E2425D1D57B004FF150 /* Costume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C1E2325D1D57B004FF150 /* Costume.swift */; };
+		8B3C1E2925D1D94B004FF150 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C1E2825D1D94B004FF150 /* Data.swift */; };
 		8B40E3E025CDE5500061CD92 /* Segue_o_BaileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3DF25CDE5500061CD92 /* Segue_o_BaileApp.swift */; };
 		8B40E3E225CDE5500061CD92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3E125CDE5500061CD92 /* ContentView.swift */; };
 		8B40E3E425CDE5510061CD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B40E3E325CDE5510061CD92 /* Assets.xcassets */; };
@@ -14,6 +17,7 @@
 		8B40E3F225CDE5510061CD92 /* Segue_o_BaileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3F125CDE5510061CD92 /* Segue_o_BaileTests.swift */; };
 		8B40E3FD25CDE5510061CD92 /* Segue_o_BaileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */; };
 		B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */; };
+		8B7D169625D1CD4200FF0878 /* ScrollViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D169525D1CD4200FF0878 /* ScrollViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B3C1E1E25D1D3DA004FF150 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8B3C1E2325D1D57B004FF150 /* Costume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Costume.swift; sourceTree = "<group>"; };
+		8B3C1E2825D1D94B004FF150 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		8B40E3DC25CDE5500061CD92 /* Segue o Baile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Segue o Baile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B40E3DF25CDE5500061CD92 /* Segue_o_BaileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue_o_BaileApp.swift; sourceTree = "<group>"; };
 		8B40E3E125CDE5500061CD92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue_o_BaileUITests.swift; sourceTree = "<group>"; };
 		8B40E3FE25CDE5510061CD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		8B7D169525D1CD4200FF0878 /* ScrollViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,9 @@
 		8B40E3DE25CDE5500061CD92 /* Segue o Baile */ = {
 			isa = PBXGroup;
 			children = (
+				8B7D169225D1CC1F00FF0878 /* Model */,
+				8B7D169325D1CC2900FF0878 /* View */,
+				8B7D169425D1CC3000FF0878 /* Controller */,
 				8B40E3DF25CDE5500061CD92 /* Segue_o_BaileApp.swift */,
 				8B40E3E125CDE5500061CD92 /* ContentView.swift */,
 				B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */,
@@ -131,6 +142,31 @@
 				8B40E3FE25CDE5510061CD92 /* Info.plist */,
 			);
 			path = "Segue o BaileUITests";
+			sourceTree = "<group>";
+		};
+		8B7D169225D1CC1F00FF0878 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B3C1E1E25D1D3DA004FF150 /* Category.swift */,
+				8B3C1E2325D1D57B004FF150 /* Costume.swift */,
+				8B3C1E2825D1D94B004FF150 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B7D169325D1CC2900FF0878 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B7D169525D1CD4200FF0878 /* ScrollViews.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B7D169425D1CC3000FF0878 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B40E3E225CDE5500061CD92 /* ContentView.swift in Sources */,
+				8B3C1E2925D1D94B004FF150 /* Data.swift in Sources */,
+				8B7D169625D1CD4200FF0878 /* ScrollViews.swift in Sources */,
 				8B40E3E025CDE5500061CD92 /* Segue_o_BaileApp.swift in Sources */,
 				B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */,
+				8B3C1E1F25D1D3DA004FF150 /* Category.swift in Sources */,
+				8B3C1E2425D1D57B004FF150 /* Costume.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
