@@ -14,6 +14,7 @@
 		8B40E3F225CDE5510061CD92 /* Segue_o_BaileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3F125CDE5510061CD92 /* Segue_o_BaileTests.swift */; };
 		8B40E3FD25CDE5510061CD92 /* Segue_o_BaileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */; };
 		A853A8AD25D2FE61007B966D /* TelaInicial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853A8AC25D2FE61007B966D /* TelaInicial.swift */; };
+		A8C0A34125D45B3100D53DD9 /* Fiesta Rumba.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8C0A34025D45B3100D53DD9 /* Fiesta Rumba.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue_o_BaileUITests.swift; sourceTree = "<group>"; };
 		8B40E3FE25CDE5510061CD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A853A8AC25D2FE61007B966D /* TelaInicial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicial.swift; sourceTree = "<group>"; };
+		A8C0A34025D45B3100D53DD9 /* Fiesta Rumba.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fiesta Rumba.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				8B40E3DF25CDE5500061CD92 /* Segue_o_BaileApp.swift */,
 				8B40E3E125CDE5500061CD92 /* ContentView.swift */,
 				A853A8AC25D2FE61007B966D /* TelaInicial.swift */,
+				A8C0A34025D45B3100D53DD9 /* Fiesta Rumba.ttf */,
 				8B40E3E325CDE5510061CD92 /* Assets.xcassets */,
 				8B40E3E825CDE5510061CD92 /* Info.plist */,
 				8B40E3E525CDE5510061CD92 /* Preview Content */,
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C0A34125D45B3100D53DD9 /* Fiesta Rumba.ttf in Resources */,
 				8B40E3E725CDE5510061CD92 /* Preview Assets.xcassets in Resources */,
 				8B40E3E425CDE5510061CD92 /* Assets.xcassets in Resources */,
 			);
