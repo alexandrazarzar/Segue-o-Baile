@@ -11,12 +11,33 @@ struct MainView: View {
     @State var shirtName: String = ""
     @State var pantsName:String = ""
     
-    var categories
+    @State var shirtLocation = CGPoint(x: UIScreen.main.bounds.width * 0.25, y: UIScreen.main.bounds.height * 0.1)
+    @State var pantsLocation = CGPoint(x: UIScreen.main.bounds.width * 0.25, y: UIScreen.main.bounds.height * 0.4)
     
+    @State var pantsSize = CGSize(width: 400, height: 400)
+    @State var shirtSize = CGSize(width: 224, height: 340)
+    
+    @State var shirtTapped = false
+    @State var pantsTapped = false
+    
+    var shirt: some View {
+        TestingTouches.init(imageName: $shirtName, imageLocation: $shirtLocation, imageFrame: $shirtSize, isTapped: $shirtTapped)
+            .onTapGesture {
+                <#code#>
+            }
+    }
+    
+    var pants: some View {
+        TestingTouches.init(imageName: $pantsName, imageLocation: $pantsLocation, imageFrame: $pantsSize, isTapped: $pantsTapped)
+    }
     var body: some View {
         VStack {
-            TestingTouches(imageName: shirtName)
-            TestingTouches(imageName: pantsName)
+            ZStack {
+                pants
+                    
+                shirt
+            }
+            
             
             Button(action: {
                 shirtName = "terno"
@@ -25,7 +46,7 @@ struct MainView: View {
             })
             
             Button(action: {
-                shirtName = "terno2"
+                pantsName = "pants"
             }, label: {
                 Text("Pants")
             })
@@ -37,9 +58,13 @@ struct MainView: View {
 
 struct TestingTouches: View {
     //Adicionar onTapGesture
-    var imageName: String
-    @State private var resizeBy = CGFloat(1.0)
-    @State private var location = CGPoint(x: UIScreen.main.bounds.width * 0.25, y: UIScreen.main.bounds.height * 0.1)
+    @Binding var imageName: String
+    @Binding var imageLocation: CGPoint
+    @Binding var imageFrame: CGSize
+    @Binding var isTapped: Bool
+    
+    @State var resizeBy = CGFloat(1.0)
+    
     
     var resizeOutfit: some Gesture {
         MagnificationGesture()
@@ -51,16 +76,17 @@ struct TestingTouches: View {
     var dragOutfit: some Gesture {
         DragGesture()
             .onChanged { value in
-                self.location = value.location
+                self.imageLocation = value.location
             }
+            
     }
     
     var body: some View {
         Image(imageName)
             .resizable()
             .scaleEffect(resizeBy, anchor: .center)
-            .position(location)
-            .frame(width: 224, height: 340, alignment: .center)
+            .position(imageLocation)
+            .frame(width: imageFrame.width, height: imageFrame.height, alignment: .center)
             .gesture(dragOutfit)
             .gesture(resizeOutfit)
     }
@@ -69,6 +95,6 @@ struct TestingTouches: View {
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-        //TestingTouches(imageName: .constant("terno"))
+        //TestingTouches(imageName: .constant("terno"), imageLocation: .constant(CGPoint(x: UIScreen.main.bounds.width * 0.25, y: UIScreen.main.bounds.height * 0.1)), imageFrame: .constant(CGSize(width: 224, height: 340)))
     }
 }

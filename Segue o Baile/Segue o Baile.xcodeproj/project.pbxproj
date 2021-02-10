@@ -16,8 +16,8 @@
 		8B40E3E725CDE5510061CD92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B40E3E625CDE5510061CD92 /* Preview Assets.xcassets */; };
 		8B40E3F225CDE5510061CD92 /* Segue_o_BaileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3F125CDE5510061CD92 /* Segue_o_BaileTests.swift */; };
 		8B40E3FD25CDE5510061CD92 /* Segue_o_BaileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */; };
-		B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */; };
 		8B7D169625D1CD4200FF0878 /* ScrollViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D169525D1CD4200FF0878 /* ScrollViews.swift */; };
+		B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,8 @@
 		8B40E3F825CDE5510061CD92 /* Segue o BaileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Segue o BaileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue_o_BaileUITests.swift; sourceTree = "<group>"; };
 		8B40E3FE25CDE5510061CD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		8B7D169525D1CD4200FF0878 /* ScrollViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViews.swift; sourceTree = "<group>"; };
+		B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,6 @@
 			children = (
 				8B7D169225D1CC1F00FF0878 /* Model */,
 				8B7D169325D1CC2900FF0878 /* View */,
-				8B7D169425D1CC3000FF0878 /* Controller */,
 				8B40E3DF25CDE5500061CD92 /* Segue_o_BaileApp.swift */,
 				8B40E3E125CDE5500061CD92 /* ContentView.swift */,
 				B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */,
@@ -160,13 +159,6 @@
 				8B7D169525D1CD4200FF0878 /* ScrollViews.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		8B7D169425D1CC3000FF0878 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
