@@ -22,9 +22,9 @@ struct MainView: View {
     
     var shirt: some View {
         TestingTouches.init(imageName: $shirtName, imageLocation: $shirtLocation, imageFrame: $shirtSize, isTapped: $shirtTapped)
-            .onTapGesture {
-                <#code#>
-            }
+//            .onTapGesture {
+//                //dar tapped na camisa e untap as outras
+//            }
     }
     
     var pants: some View {
