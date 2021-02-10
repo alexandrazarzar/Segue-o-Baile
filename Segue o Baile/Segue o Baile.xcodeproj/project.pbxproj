@@ -22,6 +22,8 @@
 		B45879F125D467A700AC7E02 /* CostumesScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45879F025D467A700AC7E02 /* CostumesScroll.swift */; };
 		B45879F625D4681500AC7E02 /* CategoriesScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45879F525D4681500AC7E02 /* CategoriesScroll.swift */; };
 		B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */; };
+		A83EC36A25D1C86A00DD6FAC /* imagensUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EC36925D1C86A00DD6FAC /* imagensUpload.swift */; };
+		A83EC36F25D1D02500DD6FAC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EC36E25D1D02500DD6FAC /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		B45879F025D467A700AC7E02 /* CostumesScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumesScroll.swift; sourceTree = "<group>"; };
 		B45879F525D4681500AC7E02 /* CategoriesScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScroll.swift; sourceTree = "<group>"; };
 		B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		A83EC36925D1C86A00DD6FAC /* imagensUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagensUpload.swift; sourceTree = "<group>"; };
+		A83EC36E25D1D02500DD6FAC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				A853A8AC25D2FE61007B966D /* TelaInicial.swift */,
 				A8C0A34025D45B3100D53DD9 /* Fiesta Rumba.ttf */,
 				B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */,
+				A83EC36925D1C86A00DD6FAC /* imagensUpload.swift */,
+				A83EC36E25D1D02500DD6FAC /* ImagePicker.swift */,
 				8B40E3E325CDE5510061CD92 /* Assets.xcassets */,
 				8B40E3E825CDE5510061CD92 /* Info.plist */,
 				8B40E3E525CDE5510061CD92 /* Preview Content */,
@@ -309,6 +315,8 @@
 				B45879F125D467A700AC7E02 /* CostumesScroll.swift in Sources */,
 				8B3C1E2925D1D94B004FF150 /* Data.swift in Sources */,
 				8B7D169625D1CD4200FF0878 /* CostumeView.swift in Sources */,
+				A83EC36F25D1D02500DD6FAC /* ImagePicker.swift in Sources */,
+				A83EC36A25D1C86A00DD6FAC /* imagensUpload.swift in Sources */,
 				8B40E3E025CDE5500061CD92 /* Segue_o_BaileApp.swift in Sources */,
 				B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */,
 				8B3C1E1F25D1D3DA004FF150 /* Category.swift in Sources */,
