@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B3C1E1F25D1D3DA004FF150 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C1E1E25D1D3DA004FF150 /* Category.swift */; };
+		8B3C1E2425D1D57B004FF150 /* Costume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C1E2325D1D57B004FF150 /* Costume.swift */; };
+		8B3C1E2925D1D94B004FF150 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C1E2825D1D94B004FF150 /* Data.swift */; };
 		8B40E3E025CDE5500061CD92 /* Segue_o_BaileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3DF25CDE5500061CD92 /* Segue_o_BaileApp.swift */; };
 		8B40E3E225CDE5500061CD92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3E125CDE5500061CD92 /* ContentView.swift */; };
 		8B40E3E425CDE5510061CD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B40E3E325CDE5510061CD92 /* Assets.xcassets */; };
@@ -15,6 +18,10 @@
 		8B40E3FD25CDE5510061CD92 /* Segue_o_BaileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */; };
 		A853A8AD25D2FE61007B966D /* TelaInicial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853A8AC25D2FE61007B966D /* TelaInicial.swift */; };
 		A8C0A34125D45B3100D53DD9 /* Fiesta Rumba.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8C0A34025D45B3100D53DD9 /* Fiesta Rumba.ttf */; };
+		8B7D169625D1CD4200FF0878 /* CostumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D169525D1CD4200FF0878 /* CostumeView.swift */; };
+		B45879F125D467A700AC7E02 /* CostumesScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45879F025D467A700AC7E02 /* CostumesScroll.swift */; };
+		B45879F625D4681500AC7E02 /* CategoriesScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45879F525D4681500AC7E02 /* CategoriesScroll.swift */; };
+		B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B3C1E1E25D1D3DA004FF150 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8B3C1E2325D1D57B004FF150 /* Costume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Costume.swift; sourceTree = "<group>"; };
+		8B3C1E2825D1D94B004FF150 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		8B40E3DC25CDE5500061CD92 /* Segue o Baile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Segue o Baile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B40E3DF25CDE5500061CD92 /* Segue_o_BaileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue_o_BaileApp.swift; sourceTree = "<group>"; };
 		8B40E3E125CDE5500061CD92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +59,10 @@
 		8B40E3FE25CDE5510061CD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A853A8AC25D2FE61007B966D /* TelaInicial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicial.swift; sourceTree = "<group>"; };
 		A8C0A34025D45B3100D53DD9 /* Fiesta Rumba.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fiesta Rumba.ttf"; sourceTree = "<group>"; };
+		8B7D169525D1CD4200FF0878 /* CostumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumeView.swift; sourceTree = "<group>"; };
+		B45879F025D467A700AC7E02 /* CostumesScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumesScroll.swift; sourceTree = "<group>"; };
+		B45879F525D4681500AC7E02 /* CategoriesScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScroll.swift; sourceTree = "<group>"; };
+		B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +113,13 @@
 		8B40E3DE25CDE5500061CD92 /* Segue o Baile */ = {
 			isa = PBXGroup;
 			children = (
+				8B7D169225D1CC1F00FF0878 /* Model */,
+				8B7D169325D1CC2900FF0878 /* View */,
 				8B40E3DF25CDE5500061CD92 /* Segue_o_BaileApp.swift */,
 				8B40E3E125CDE5500061CD92 /* ContentView.swift */,
 				A853A8AC25D2FE61007B966D /* TelaInicial.swift */,
 				A8C0A34025D45B3100D53DD9 /* Fiesta Rumba.ttf */,
+				B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */,
 				8B40E3E325CDE5510061CD92 /* Assets.xcassets */,
 				8B40E3E825CDE5510061CD92 /* Info.plist */,
 				8B40E3E525CDE5510061CD92 /* Preview Content */,
@@ -134,6 +151,26 @@
 				8B40E3FE25CDE5510061CD92 /* Info.plist */,
 			);
 			path = "Segue o BaileUITests";
+			sourceTree = "<group>";
+		};
+		8B7D169225D1CC1F00FF0878 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B3C1E1E25D1D3DA004FF150 /* Category.swift */,
+				8B3C1E2325D1D57B004FF150 /* Costume.swift */,
+				8B3C1E2825D1D94B004FF150 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B7D169325D1CC2900FF0878 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B7D169525D1CD4200FF0878 /* CostumeView.swift */,
+				B45879F525D4681500AC7E02 /* CategoriesScroll.swift */,
+				B45879F025D467A700AC7E02 /* CostumesScroll.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +305,14 @@
 			files = (
 				A853A8AD25D2FE61007B966D /* TelaInicial.swift in Sources */,
 				8B40E3E225CDE5500061CD92 /* ContentView.swift in Sources */,
+				B45879F625D4681500AC7E02 /* CategoriesScroll.swift in Sources */,
+				B45879F125D467A700AC7E02 /* CostumesScroll.swift in Sources */,
+				8B3C1E2925D1D94B004FF150 /* Data.swift in Sources */,
+				8B7D169625D1CD4200FF0878 /* CostumeView.swift in Sources */,
 				8B40E3E025CDE5500061CD92 /* Segue_o_BaileApp.swift in Sources */,
+				B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */,
+				8B3C1E1F25D1D3DA004FF150 /* Category.swift in Sources */,
+				8B3C1E2425D1D57B004FF150 /* Costume.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

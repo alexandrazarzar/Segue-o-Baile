@@ -11,7 +11,9 @@ import SwiftUI
 struct Segue_o_BaileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //TestingTouches(imageName: .constant("terno"))
+            MainView()
+            //ScrollViews()
         }
     }
 }
