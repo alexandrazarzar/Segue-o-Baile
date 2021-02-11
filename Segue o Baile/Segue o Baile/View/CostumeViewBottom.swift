@@ -31,7 +31,7 @@ struct CostumeViewBottom: View {
         }
         //}
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-            ImagePicker(image: self.$inputImage)
+            ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
             //}
         }
     }
