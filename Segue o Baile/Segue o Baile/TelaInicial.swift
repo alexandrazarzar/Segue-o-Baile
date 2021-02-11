@@ -20,7 +20,7 @@ struct TelaInicial: View {
         NavigationView {
             ZStack{
                 NavigationLink(
-                    destination: CostumeView(image: $image),
+                    destination: CostumeView(image: $image, sourceType: $sourceType),
                     isActive: $costumeViewIsActive) {
                     EmptyView()
                 }
@@ -115,7 +115,7 @@ struct TelaInicial: View {
             }
             .ignoresSafeArea()
             .background(Color(red: 0.945098, green: 0.976470, blue: 0.984313)
-                            .edgesIgnoringSafeArea(.top)
+            .edgesIgnoringSafeArea(.top)
         )
         } .accentColor(.white)
     }

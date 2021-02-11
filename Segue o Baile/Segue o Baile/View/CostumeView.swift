@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CostumeView: View {
     @Binding var image: Image?
+    @Binding var sourceType: UIImagePickerController.SourceType
+
     
     var body: some View {
         ZStack {
@@ -24,7 +26,7 @@ struct CostumeView: View {
                 Spacer()
                 CategoriesScroll()
                     .padding(.bottom, -8)
-                CostumeViewBottom(image: $image)
+                CostumeViewBottom(image: $image, sourceType: $sourceType)
             }
             .edgesIgnoringSafeArea(.bottom)
         } .background(Color.init(#colorLiteral(red: 0.1647058824, green: 0.7568627451, blue: 0.862745098, alpha: 1)))
@@ -34,6 +36,6 @@ struct CostumeView: View {
 
 struct CostumeView_Previews: PreviewProvider {
     static var previews: some View {
-        CostumeView(image: .constant(Image(systemName: "heart")))
+        CostumeView(image: .constant(Image(systemName: "heart")), sourceType: .constant(.camera))
     }
 }
