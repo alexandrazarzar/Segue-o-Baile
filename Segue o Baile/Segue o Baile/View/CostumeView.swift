@@ -16,18 +16,22 @@ struct CostumeView: View {
                 image?
                     .resizable()
                     .scaledToFit()
+                    .edgesIgnoringSafeArea(.top)
             }
+            
             VStack {
                 Spacer()
-                CategoriesScroll() .padding(.bottom, -8)
+                CategoriesScroll()
+                    .padding(.bottom, -8)
                 CostumeViewBottom(image: $image)
-            } .edgesIgnoringSafeArea(.bottom)
+            }
+            .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
 
-struct ScrollViews_Previews: PreviewProvider {
+struct CostumeView_Previews: PreviewProvider {
     static var previews: some View {
-        SecondView()
+        CostumeView()
     }
 }

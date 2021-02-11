@@ -58,6 +58,7 @@ struct CostumesScroll: View {
                 }
             }
         }
+        
     }
     
 }

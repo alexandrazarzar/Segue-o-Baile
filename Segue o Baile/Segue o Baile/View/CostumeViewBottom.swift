@@ -18,15 +18,15 @@ struct CostumeViewBottom: View {
         ZStack{
             
             Image("rodape-azul")
-                .edgesIgnoringSafeArea(.all)
+                .resizable()
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.2, alignment: .center)
+            
             Button(action: {
                 self.showingImagePicker = true
             }) {
-                Text("")
-                    .padding()
+                Circle()
                     .frame(width: 50, height: 51)
-                    .background(Color.white)
-                    .cornerRadius(30)
+                    .foregroundColor(.white)
             }
         }
         //}
