@@ -7,13 +7,9 @@
 
 import SwiftUI
 
-<<<<<<< HEAD:Segue o Baile/Segue o Baile/View/SecondView.swift
-struct SecondView: View {
-=======
 struct CostumeView: View {
     @State var image: Image?
     
->>>>>>> telaInicial:Segue o Baile/Segue o Baile/View/CostumeView.swift
     var body: some View {
         ZStack {
             if image != nil {
