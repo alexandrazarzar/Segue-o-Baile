@@ -16,9 +16,10 @@
 		8B40E3E725CDE5510061CD92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B40E3E625CDE5510061CD92 /* Preview Assets.xcassets */; };
 		8B40E3F225CDE5510061CD92 /* Segue_o_BaileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3F125CDE5510061CD92 /* Segue_o_BaileTests.swift */; };
 		8B40E3FD25CDE5510061CD92 /* Segue_o_BaileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */; };
-		8B7D169625D1CD4200FF0878 /* CostumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D169525D1CD4200FF0878 /* CostumeView.swift */; };
+		8B7D169625D1CD4200FF0878 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D169525D1CD4200FF0878 /* SecondView.swift */; };
 		B45879F125D467A700AC7E02 /* CostumesScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45879F025D467A700AC7E02 /* CostumesScroll.swift */; };
 		B45879F625D4681500AC7E02 /* CategoriesScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45879F525D4681500AC7E02 /* CategoriesScroll.swift */; };
+		B4587A2125D4768600AC7E02 /* WearCostumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4587A2025D4768600AC7E02 /* WearCostumeView.swift */; };
 		B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +56,10 @@
 		8B40E3F825CDE5510061CD92 /* Segue o BaileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Segue o BaileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B40E3FC25CDE5510061CD92 /* Segue_o_BaileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue_o_BaileUITests.swift; sourceTree = "<group>"; };
 		8B40E3FE25CDE5510061CD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B7D169525D1CD4200FF0878 /* CostumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumeView.swift; sourceTree = "<group>"; };
+		8B7D169525D1CD4200FF0878 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		B45879F025D467A700AC7E02 /* CostumesScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumesScroll.swift; sourceTree = "<group>"; };
 		B45879F525D4681500AC7E02 /* CategoriesScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScroll.swift; sourceTree = "<group>"; };
+		B4587A2025D4768600AC7E02 /* WearCostumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearCostumeView.swift; sourceTree = "<group>"; };
 		B4BDEB8025D1C8FE005B586A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 				8B3C1E1E25D1D3DA004FF150 /* Category.swift */,
 				8B3C1E2325D1D57B004FF150 /* Costume.swift */,
 				8B3C1E2825D1D94B004FF150 /* Data.swift */,
+				B4587A2025D4768600AC7E02 /* WearCostumeView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,7 +163,7 @@
 		8B7D169325D1CC2900FF0878 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8B7D169525D1CD4200FF0878 /* CostumeView.swift */,
+				8B7D169525D1CD4200FF0878 /* SecondView.swift */,
 				B45879F525D4681500AC7E02 /* CategoriesScroll.swift */,
 				B45879F025D467A700AC7E02 /* CostumesScroll.swift */,
 			);
@@ -298,9 +301,10 @@
 			files = (
 				8B40E3E225CDE5500061CD92 /* ContentView.swift in Sources */,
 				B45879F625D4681500AC7E02 /* CategoriesScroll.swift in Sources */,
+				B4587A2125D4768600AC7E02 /* WearCostumeView.swift in Sources */,
 				B45879F125D467A700AC7E02 /* CostumesScroll.swift in Sources */,
 				8B3C1E2925D1D94B004FF150 /* Data.swift in Sources */,
-				8B7D169625D1CD4200FF0878 /* CostumeView.swift in Sources */,
+				8B7D169625D1CD4200FF0878 /* SecondView.swift in Sources */,
 				8B40E3E025CDE5500061CD92 /* Segue_o_BaileApp.swift in Sources */,
 				B4BDEB8125D1C8FE005B586A /* SwiftUIView.swift in Sources */,
 				8B3C1E1F25D1D3DA004FF150 /* Category.swift in Sources */,
@@ -463,6 +467,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Segue o Baile/Preview Content\"";
+				DEVELOPMENT_TEAM = SZDYT9A2D8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Segue o Baile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -484,6 +489,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Segue o Baile/Preview Content\"";
+				DEVELOPMENT_TEAM = SZDYT9A2D8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Segue o Baile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

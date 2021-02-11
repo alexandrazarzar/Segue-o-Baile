@@ -11,52 +11,62 @@ struct MainView: View {
     @State var shirtName: String = ""
     @State var pantsName:String = ""
     
-    @State var shirtLocation = CGPoint(x: UIScreen.main.bounds.width * 0.25, y: UIScreen.main.bounds.height * 0.1)
-    @State var pantsLocation = CGPoint(x: UIScreen.main.bounds.width * 0.25, y: UIScreen.main.bounds.height * 0.4)
+    @State var shirtLocation = CGPoint(x: UIScreen.main.bounds.width * 0.25, y: UIScreen.main.bounds.height * 0.5)
+    @State var pantsLocation = CGPoint(x: UIScreen.main.bounds.width * 0.25, y: UIScreen.main.bounds.height * 0.75)
     
-    @State var pantsSize = CGSize(width: 400, height: 400)
-    @State var shirtSize = CGSize(width: 224, height: 340)
+    @State var pantsSize = CGSize(width: 200, height: 300)
+    @State var shirtSize = CGSize(width: 200, height: 300)
     
     @State var shirtTapped = false
     @State var pantsTapped = false
     
     var shirt: some View {
-        TestingTouches.init(imageName: $shirtName, imageLocation: $shirtLocation, imageFrame: $shirtSize, isTapped: $shirtTapped)
-//            .onTapGesture {
-//                //dar tapped na camisa e untap as outras
-//            }
+        WearCostume.init(imageName: $shirtName, imageLocation: $shirtLocation, imageFrame: $shirtSize, isTapped: $shirtTapped)
+        //            .onTapGesture {
+        //                //dar tapped na camisa e untap as outras
+        //            }
     }
     
     var pants: some View {
-        TestingTouches.init(imageName: $pantsName, imageLocation: $pantsLocation, imageFrame: $pantsSize, isTapped: $pantsTapped)
+        WearCostume.init(imageName: $pantsName, imageLocation: $pantsLocation, imageFrame: $pantsSize, isTapped: $pantsTapped)
     }
     var body: some View {
-        VStack {
-            ZStack {
-                pants
+        ZStack {
+            Image("person")
+                .ignoresSafeArea(.all)
+            
+            VStack {
+                
+                ZStack {
+                    pants
                     
-                shirt
+                    shirt
+                }
+                
+                Spacer()
+                
+                HStack {
+                    Button(action: {
+                        shirtName = "terno"
+                    }, label: {
+                        Text("Shirt")
+                    })
+                    Button(action: {
+                        pantsName = "pants"
+                    }, label: {
+                        Text("Pants")
+                    })
+                }
+                
+                
             }
-            
-            
-            Button(action: {
-                shirtName = "terno"
-            }, label: {
-                Text("Shirt")
-            })
-            
-            Button(action: {
-                pantsName = "pants"
-            }, label: {
-                Text("Pants")
-            })
         }
         
         
     }
 }
 
-struct TestingTouches: View {
+struct WearCostume: View {
     //Adicionar onTapGesture
     @Binding var imageName: String
     @Binding var imageLocation: CGPoint
@@ -78,7 +88,7 @@ struct TestingTouches: View {
             .onChanged { value in
                 self.imageLocation = value.location
             }
-            
+        
     }
     
     var body: some View {

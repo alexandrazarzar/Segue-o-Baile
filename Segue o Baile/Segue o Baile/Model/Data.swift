@@ -34,6 +34,7 @@ class Data {
         // Fantasy Category 4
         self.categories.append(Category.init(name: "Camisas", selected: false, costume: []))
         // images Camisas
+//        self.categories[4].costume.append(Costume.init(imageCostume: "terno", imageLocation: <#T##CGPoint#>, imageFrame: <#T##CGSize#>, isTapped: <#T##Bool#>))
         
         // Fantasy Category 5
         self.categories.append(Category.init(name: "Calças", selected: false, costume: []))

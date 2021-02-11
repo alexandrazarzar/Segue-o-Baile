@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CostumesScroll: View {
-    
+    //colocar tamanho, localização e istapped na categoriesscroll,
+    //criar outra view pra posicionar as imagens (usar zstack pra ela ficar atrás das outras e na frente da foto): nela, tentar mudar tbm o istapped ao clicar na fantasia  
     @Binding var dados: Data
     @Binding var categorySelected: Int
     @Binding var costumeSelected: Int
@@ -18,8 +19,9 @@ struct CostumesScroll: View {
             HStack {
                 ForEach(0..<dados.categories[categorySelected].costume.count, id:\.self) { count in
                     Button(action: {
-                        
+    
                         costumeSelected = count
+                        
                         
                     }, label: {
                         

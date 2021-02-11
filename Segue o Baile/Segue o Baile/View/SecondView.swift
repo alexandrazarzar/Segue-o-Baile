@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CostumeView: View {
+struct SecondView: View {
     var body: some View {
         VStack {
             CategoriesScroll()
@@ -17,6 +17,6 @@ struct CostumeView: View {
 
 struct ScrollViews_Previews: PreviewProvider {
     static var previews: some View {
-        CostumeView()
+        SecondView()
     }
 }
