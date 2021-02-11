@@ -7,10 +7,25 @@
 
 import SwiftUI
 
+<<<<<<< HEAD:Segue o Baile/Segue o Baile/View/SecondView.swift
 struct SecondView: View {
+=======
+struct CostumeView: View {
+    @State var image: Image?
+    
+>>>>>>> telaInicial:Segue o Baile/Segue o Baile/View/CostumeView.swift
     var body: some View {
-        VStack {
-            CategoriesScroll()
+        ZStack {
+            if image != nil {
+                image?
+                    .resizable()
+                    .scaledToFit()
+            }
+            VStack {
+                Spacer()
+                CategoriesScroll() .padding(.bottom, -8)
+                CostumeViewBottom(image: $image)
+            } .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
