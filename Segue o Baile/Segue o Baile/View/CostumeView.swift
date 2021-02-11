@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct CostumeView: View {
+    @State var image: Image?
+    
     var body: some View {
-        VStack {
-            CategoriesScroll()
+        ZStack {
+            if image != nil {
+                image?
+                    .resizable()
+                    .scaledToFit()
+            }
+            VStack {
+                Spacer()
+                CategoriesScroll() .padding(.bottom, -8)
+                CostumeViewBottom(image: $image)
+            } .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
