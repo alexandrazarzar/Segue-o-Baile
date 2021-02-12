@@ -23,7 +23,7 @@ struct CostumeViewBottom: View {
                 .resizable()
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.16, alignment: .center)
             
-            HStack(spacing: UIScreen.main.bounds.width - 170) {
+            HStack(spacing: UIScreen.main.bounds.width * 0.3) {
                 Button(action: {//botao galeria
                     sourceType = .photoLibrary
                     self.showingImagePicker = true
@@ -34,6 +34,24 @@ struct CostumeViewBottom: View {
                         .aspectRatio(contentMode: .fill)
                         .foregroundColor(.white)
                 }
+                
+                Button(action: {
+                    
+                }, label: {
+                    ZStack{
+                        Circle()
+                            .frame(width: 60, height: 60, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.9176470588, green: 0.2274509804, blue: 0.4784313725, alpha: 1)))
+                        
+                        Image(systemName: "square.and.arrow.up")
+                            .resizable()
+                            .frame(width: 30, height: 40, alignment: .center)
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(.white)
+                            
+                    }
+                })
+                
                 Button(action: {// botao camera
                     sourceType = .camera
                     self.showingImagePicker = true

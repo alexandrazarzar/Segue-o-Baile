@@ -15,7 +15,7 @@ class Data: ObservableObject {
     init() {
         
         // Fantasy Category 1
-        self.categories.append(Category.init(name: "Chapéus", selected: false, costume: [], size: CGSize(width: 100, height: 100), location: CGPoint(x: 10, y: 10), costumeSelected: "", costumeSelectedIndex: 0))
+        self.categories.append(Category.init(name: "Chapéus", selected: false, costume: [], size: CGSize(width: 100, height: 100), location: CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY), costumeSelected: "", costumeSelectedIndex: 0))
         // images
         self.categories[0].costume.append(Costume.init(imageCostume: "none", isTapped: false))
         for number in 1...25 {
@@ -23,7 +23,7 @@ class Data: ObservableObject {
         }
          
         // Fantasy Category 2
-        self.categories.append(Category.init(name: "Máscaras", selected: false, costume: [], size: CGSize(width: 100, height: 100), location: CGPoint(x: 10, y: 10), costumeSelected: "", costumeSelectedIndex: 0))
+        self.categories.append(Category.init(name: "Máscaras", selected: false, costume: [], size: CGSize(width: 100, height: 100), location: CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY), costumeSelected: "", costumeSelectedIndex: 0))
         // images Mascaras
         self.categories[1].costume.append(Costume.init(imageCostume: "none", isTapped: false))
         for number in 1...23 {
@@ -31,7 +31,7 @@ class Data: ObservableObject {
         }
         
         // Fantasy Category 3
-        self.categories.append(Category.init(name: "Vestidos", selected: false, costume: [], size: CGSize(width: 100, height: 100), location: CGPoint(x: 20, y: 20), costumeSelected: "", costumeSelectedIndex: 0))
+        self.categories.append(Category.init(name: "Vestidos", selected: false, costume: [], size: CGSize(width: 100, height: 100), location: CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY), costumeSelected: "", costumeSelectedIndex: 0))
         // images Vestidos
         self.categories[2].costume.append(Costume.init(imageCostume: "none", isTapped: false))
         for number in 1...49 {
@@ -39,7 +39,7 @@ class Data: ObservableObject {
         }
         
         // Fantasy Category 4
-        self.categories.append(Category.init(name: "Camisas", selected: false, costume: [], size: CGSize(width: 200, height: 200), location: CGPoint(x: 30, y: 30), costumeSelected: "", costumeSelectedIndex: 0))
+        self.categories.append(Category.init(name: "Camisas", selected: false, costume: [], size: CGSize(width: 200, height: 200), location: CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY), costumeSelected: "", costumeSelectedIndex: 0))
         // images Camisas
         self.categories[3].costume.append(Costume.init(imageCostume: "none", isTapped: false))
         for number in 1...23 {
@@ -47,7 +47,7 @@ class Data: ObservableObject {
         }
         
         // Fantasy Category 5
-        self.categories.append(Category.init(name: "Calças", selected: false, costume: [], size: CGSize(width: 100, height: 100), location: CGPoint(x: 30, y: 30), costumeSelected: "", costumeSelectedIndex: 0))
+        self.categories.append(Category.init(name: "Calças", selected: false, costume: [], size: CGSize(width: 100, height: 100), location: CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY), costumeSelected: "", costumeSelectedIndex: 0))
         // images Calças
         self.categories[4].costume.append(Costume.init(imageCostume: "none", isTapped: false))
         for number in 1...15 {
