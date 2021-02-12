@@ -19,7 +19,7 @@ struct CostumesScroll: View {
             HStack {
                 ForEach(0..<dados.categories[categorySelected].costume.count, id:\.self) { count in
                     Button(action: {
-    
+                        
                         costumeSelected = count
                         
                         
@@ -28,7 +28,7 @@ struct CostumesScroll: View {
                         ZStack {
                             
                             if costumeSelected != count {
-                             
+                                
                                 Circle()
                                     .foregroundColor(.white)
                                     .frame(width: 48, height: 48)
@@ -40,9 +40,13 @@ struct CostumesScroll: View {
                                 
                             } else {
                                 
-                                Circle().stroke(Color.blue, lineWidth: 3)
-                                    .foregroundColor(.black)
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 2)
                                     .frame(width: 60, height: 60)
+                                
+                                Circle()
+                                    .foregroundColor(.white)
+                                    .frame(width: 50, height: 50)
                                 
                                 Image(dados.categories[categorySelected].costume[count].imageCostume!)
                                     .resizable()

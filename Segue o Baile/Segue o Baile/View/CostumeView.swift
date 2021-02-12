@@ -8,30 +8,34 @@
 import SwiftUI
 
 struct CostumeView: View {
-    @State var image: Image?
+    @Binding var image: Image?
+    @Binding var sourceType: UIImagePickerController.SourceType
+
     
     var body: some View {
         ZStack {
             if image != nil {
                 image?
                     .resizable()
-                    .scaledToFit()
-                    .edgesIgnoringSafeArea(.top)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.7)
+                    .clipped()
             }
             
             VStack {
                 Spacer()
                 CategoriesScroll()
                     .padding(.bottom, -8)
-                CostumeViewBottom(image: $image)
+                CostumeViewBottom(image: $image, sourceType: $sourceType)
             }
             .edgesIgnoringSafeArea(.bottom)
-        }
+        } .background(Color.init(#colorLiteral(red: 0.1647058824, green: 0.7568627451, blue: 0.862745098, alpha: 1)))
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
 struct CostumeView_Previews: PreviewProvider {
     static var previews: some View {
-        CostumeView()
+        CostumeView(image: .constant(Image(systemName: "heart")), sourceType: .constant(.camera))
     }
 }
