@@ -30,11 +30,11 @@ struct CostumeView: View {
     }
 }
 
-struct CostumeView_Previews: PreviewProvider {
-    static var previews: some View {
-        CostumeView(image: .constant(Image(systemName: "heart")), sourceType: .constant(.camera))
-    }
-}
+//struct CostumeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CostumeView(image: .constant(Image(systemName: "heart")), sourceType: .constant(.camera))
+//    }
+//}
 
 struct FinalPhoto: View {
     @Binding var image: Image?

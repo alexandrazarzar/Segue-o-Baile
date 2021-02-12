@@ -15,7 +15,6 @@ struct CostumesScroll: View {
     @State var costumeSelected: Int = 0
     
     var body: some View {
-
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(0..<dados.categories[categorySelected].costume.count, id:\.self) { count in
@@ -81,9 +80,9 @@ struct CostumesScroll: View {
                                     }
                                 
                             }
-                            .padding(.leading)
-                        })
-                    }
+                        }
+                        .padding(.leading)
+                    })
                 }
             }
         }

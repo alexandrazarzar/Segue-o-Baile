@@ -20,7 +20,7 @@ struct TelaInicial: View {
         NavigationView {
             ZStack{
                 NavigationLink(
-                    destination: CostumeView(image: $image, sourceType: $sourceType),
+                    destination: CostumeView(image: image, sourceType: $sourceType),
                     isActive: $costumeViewIsActive) {
                     EmptyView()
                 }
