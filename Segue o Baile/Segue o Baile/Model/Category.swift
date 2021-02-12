@@ -11,13 +11,19 @@ import SwiftUI
 class Category: ObservableObject {
     
     @Published var name: String
-    @Published var selected: Bool
     @Published var costume: [Costume]
+    @Published var size: CGSize
+    @Published var location: CGPoint
+    @Published var costumeSelected: String
+    @Published var costumeSelectedIndex: Int
     
     
-    init(name:String, selected: Bool, costume: [Costume]) {
+    init(name:String, selected: Bool, costume: [Costume], size: CGSize, location: CGPoint, costumeSelected: String, costumeSelectedIndex: Int) {
         self.name = name
-        self.selected = selected
         self.costume = costume
+        self.size = size
+        self.location = location
+        self.costumeSelected = costumeSelected
+        self.costumeSelectedIndex = costumeSelectedIndex
     }
 }

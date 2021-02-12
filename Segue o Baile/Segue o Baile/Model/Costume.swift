@@ -11,9 +11,11 @@ import SwiftUI
 class Costume: ObservableObject {
     
     @Published var imageCostume: String?
+    @Published var isTapped: Bool
     
-    init(imageCostume: String) {
+    init(imageCostume: String, isTapped: Bool) {
         self.imageCostume = imageCostume
+        self.isTapped = isTapped
     }
     
 }

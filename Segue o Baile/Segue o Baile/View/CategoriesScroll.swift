@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct CategoriesScroll: View {
-    @State var dados = Data.init()
-    @State var categorySelected: Int = 1
-    @State var costumeSelected: Int = -1
+    @ObservedObject var dados: Data
+    @Binding var categorySelected: Int
     
     var body: some View {
         
         VStack {
             
-            CostumesScroll(dados: $dados, categorySelected: $categorySelected, costumeSelected: $costumeSelected )
+            CostumesScroll(dados: dados, categorySelected: $categorySelected)
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
@@ -25,7 +24,6 @@ struct CategoriesScroll: View {
                             categorySelected = count
                             
                         }, label: {
-                            
                             if categorySelected != count {
                                 Text(dados.categories[count].name)
                                     .foregroundColor(.white)
@@ -46,8 +44,7 @@ struct CategoriesScroll: View {
     
 }
 
-struct CategoriesScroll_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoriesScroll()
-    }
-}
+//struct CategoriesScroll_Previews: PreviewProvider {
+//    static var previews: some View {dados: .constant(Data.init()), categorySelected: .constant(1))
+//    }
+//}
