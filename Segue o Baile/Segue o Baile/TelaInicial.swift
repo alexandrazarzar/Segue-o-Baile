@@ -37,7 +37,7 @@ struct TelaInicial: View {
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 119/255, green: 62/255, blue: 169/255))
-                        .frame(width: 251, height: 85, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 280, height: 85, alignment: .center)
                         .multilineTextAlignment(.center)
                     
                     Text("Mas não desanime")
@@ -46,25 +46,25 @@ struct TelaInicial: View {
                         .multilineTextAlignment(.center)
                     
                     ZStack{
-                    Image("estandarte")
-                        .resizable()
-                        .frame(width: 297, height: 275, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .aspectRatio(contentMode: .fit)
+                        Image("estandarte")
+                            .resizable()
+                            .frame(width: 297, height: 275, alignment: .center)
+                            .aspectRatio(contentMode: .fit)
                         
-                    VStack{
-                        Text("SEGUE O BAILE!")
-                            .frame(width: 216, height: 114, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            .foregroundColor(Color(red: 234/255, green: 58/255, blue: 122/255))
-                            .font(Font.custom("Fiesta Rumba", size: 36))
-                            .multilineTextAlignment(.center)
-
+                        VStack{
+                            Text("SEGUE\nO BAILE!")
+                                .frame(width: 250, height: 114, alignment: .center)
+                                .foregroundColor(Color(red: 234/255, green: 58/255, blue: 122/255))
+                                .font(Font.custom("Fiesta Rumba", size: 30))
+                                .multilineTextAlignment(.center)
                             
-                        Text("Tire uma foto, customize-a e mande para a galera! Vamos levar um pouco da folia pra dentro de casa e levantar o astral do pessoal.")
-                            .fontWeight(.medium)
-                            .frame(width: 260, height: 85)
-                            .font(Font.custom("SF Pro Rounded", size: 15))
-                            .foregroundColor(Color(red: 0, green: 67/255, blue: 177/255))
-                            .multilineTextAlignment(.center)
+                            
+                            Text("Tire uma foto, customize-a e mande para a galera! Vamos levar um pouco da folia pra dentro de casa e levantar o astral do pessoal.")
+                                .fontWeight(.medium)
+                                .frame(width: 260, height: 85)
+                                .font(Font.custom("SF Pro Rounded", size: 15))
+                                .foregroundColor(Color(red: 0, green: 67/255, blue: 177/255))
+                                .multilineTextAlignment(.center)
                         }
                     }
                     
@@ -92,20 +92,20 @@ struct TelaInicial: View {
                 }
                 .actionSheet(isPresented: $showingImageOptions, content: {
                     ActionSheet(title: Text("Ttulo"), message: Text("mensagem"), buttons: [
-                                    .default(Text("Câmera")) {
-                                        //ImagePicker(image: $inputImage, sourceType: .camera)
-                                        //loadImage()
-                                        sourceType = .camera
-                                        showingImagePicker = true
-                                    },
-                                    .default(Text("Galeria")) {
-                                        sourceType = .photoLibrary
-                                        showingImagePicker = true
-
-                                       // ImagePicker(image: $inputImage, sourceType: .photoLibrary)
-                                        //loadImage()
-                                    },
-                                    .cancel()
+                        .default(Text("Câmera")) {
+                            //ImagePicker(image: $inputImage, sourceType: .camera)
+                            //loadImage()
+                            sourceType = .camera
+                            showingImagePicker = true
+                        },
+                        .default(Text("Galeria")) {
+                            sourceType = .photoLibrary
+                            showingImagePicker = true
+                            
+                            // ImagePicker(image: $inputImage, sourceType: .photoLibrary)
+                            //loadImage()
+                        },
+                        .cancel()
                     ])
                 })
                 .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
@@ -116,7 +116,9 @@ struct TelaInicial: View {
             .ignoresSafeArea()
             .background(Color(red: 0.945098, green: 0.976470, blue: 0.984313)
             .edgesIgnoringSafeArea(.top)
-        )
+
+                        
+            )
         } .accentColor(.white)
     }
     
