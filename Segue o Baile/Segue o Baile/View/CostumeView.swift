@@ -10,6 +10,7 @@ import SwiftUI
 struct CostumeView: View {
     @State var image: Image?
     @ObservedObject var dados = Data.init()
+    @Binding var sourceType: UIImagePickerController.SourceType
     @State var categorySelected: Int = 1
     @State var costumeSelected: Int = -1
     
@@ -21,16 +22,17 @@ struct CostumeView: View {
                 Spacer()
                 CategoriesScroll(dados: dados, categorySelected: $categorySelected)
                     .padding(.bottom, -8)
-                CostumeViewBottom(image: $image)
+                CostumeViewBottom(image: $image, sourceType: $sourceType)
             }
             .edgesIgnoringSafeArea(.bottom)
-        }
+        } .background(Color.init(#colorLiteral(red: 0.1647058824, green: 0.7568627451, blue: 0.862745098, alpha: 1)))
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
 struct CostumeView_Previews: PreviewProvider {
     static var previews: some View {
-        CostumeView()
+        CostumeView(image: .constant(Image(systemName: "heart")), sourceType: .constant(.camera))
     }
 }
 

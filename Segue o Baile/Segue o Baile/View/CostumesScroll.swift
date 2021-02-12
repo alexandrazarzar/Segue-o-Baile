@@ -15,49 +15,58 @@ struct CostumesScroll: View {
     @State var costumeSelected: Int = 0
     
     var body: some View {
-        ZStack {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(0..<dados.categories[categorySelected].costume.count, id:\.self) { count in
-                        Button(action: {
-                            costumeSelected = count
-                            dados.categories[categorySelected].costumeSelectedIndex = count
+
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(0..<dados.categories[categorySelected].costume.count, id:\.self) { count in
+                    Button(action: {
+                        
+                        costumeSelected = count
+
+                        dados.categories[categorySelected].costumeSelectedIndex = count
                            
-                            if count == 0 {
-                                dados.categories[categorySelected].costumeSelected = ""
+                        if count == 0 {
+                            dados.categories[categorySelected].costumeSelected = ""
+                                
+                        } else {
+                            dados.categories[categorySelected].costumeSelected = dados.categories[categorySelected].costume[count].imageCostume!
+                        }
+                        
+                    }, label: {
+                        
+                        ZStack {
+                            
+                            if dados.categories[categorySelected].costumeSelectedIndex != count {
+                                
+                                Circle()
+                                    .foregroundColor(.white)
+                                    .frame(width: 48, height: 48)
+
+                                if count == 0 {
+                                        Image(systemName: "nosign")
+                                            .resizable()
+                                            .foregroundColor(.gray)
+                                            .frame(width: 32, height: 32)
+                                            .padding()
+                                    } else {
+                                        Image(dados.categories[categorySelected].costume[count].imageCostume!)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 32, height: 32)
+                                            .padding()
+                                    }
                                 
                             } else {
-                                dados.categories[categorySelected].costumeSelected = dados.categories[categorySelected].costume[count].imageCostume!
-                            }
-                          
-                        }, label: {
-                            ZStack {
-                                if dados.categories[categorySelected].costumeSelectedIndex != count {
-                                    Circle()
-                                        .foregroundColor(.white)
-                                        .frame(width: 48, height: 48)
-                                    
-                                    if count == 0 {
-                                        Image(systemName: "nosign")
-                                            .resizable()
-                                            .foregroundColor(.gray)
-                                            .frame(width: 32, height: 32)
-                                            .padding()
-                                    } else {
-                                        Image(dados.categories[categorySelected].costume[count].imageCostume!)
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 32, height: 32)
-                                            .padding()
-                                    }
-                                    
-                                } else {
-                                    
-                                    Circle().stroke(Color.blue, lineWidth: 3)
-                                        .foregroundColor(.white)
-                                        .frame(width: 60, height: 60)
-                                    
-                                    if count == 0 {
+                                
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 2)
+                                    .frame(width: 60, height: 60)
+                                
+                                Circle()
+                                    .foregroundColor(.white)
+                                    .frame(width: 50, height: 50)
+
+                                if count == 0 {
                                         Image(systemName: "nosign")
                                             .resizable()
                                             .foregroundColor(.gray)
@@ -70,8 +79,6 @@ struct CostumesScroll: View {
                                             .frame(width: 36, height: 36)
                                             .padding()
                                     }
-                                    
-                                }
                                 
                             }
                             .padding(.leading)
